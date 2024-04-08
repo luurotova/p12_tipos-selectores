@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*selector de clase*/
+.parrafo-alternativo{
+   color: blueviolet;
+}
+
+/*selector de id*/
+#spanElement{
+    background-color: #0000ff80;
+}
+
+/*selector por corchetes*/
+[title="elemento Discolo Rojo"]{
+    background-color: #FF000080;
+}
+
+/*selector universal*/
+.section-1 *{
+    color: pink;
+}
+
+/*selector compuesto*/
+.parrafo-alternativo.con-background{
+    background-color: pink;
+ }
+
+ /*selector por descencencia*/
+ .section-2 div p{
+    color: rgb(255, 208, 0);
+ }
+
+ /*selector por "childs"*/
+ .section-3 p:first-child{
+    color: red;
+ }
+/*con el nth puedo seleccionar un elemento especifico*/
+ .section-3 p:nth-child(2){
+    color: green;
+ }
+
+ .section-3 p:last-child{
+    color: blue;
+ }
+
+/*selector de angulo*/
+/*solo afecta a los elementos que estan dentro de section(todo el codigo, en este caso), excepto el primero*/
+section > p{
+    font-size: 21px;
+}
+
+/*selector primera letra*/
+p:first-letter{
+    color: red;
+}
